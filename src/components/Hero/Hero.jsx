@@ -11,12 +11,18 @@ export const Hero = () => {
         <p className={styles.description}>
           I'm a major CSE Student
         </p>
+        <div style={{display:"flex", flexDirection:"row", flexWrap:"wrap", alignItems:"center", justifyContent:"center", gap:"20px"}}>
+
         <a href="mailto:rudrakshibhandekar@gmail.com" className={styles.contactBtn}>
           Contact Me
         </a>
+        <a href={getImageUrl('resume.pdf')} className={styles.contactBtn} target="_blank">
+          Resume
+        </a>
+        </div>
       </div>
       <img
-        src={getImageUrl("hero/heroImage.png")}
+        src={getImageUrl("my.png")}
         alt="Hero image of me"
         className={styles.heroImg}
       />

@@ -15,14 +15,14 @@ export const Contact = () => {
           <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
           
         </a>
-        <a href="https://www.linkedin.com/myname" target="_blank" className={styles.link}>
+        <a href="https://www.linkedin.com/in/rudrakshi-bhandekar-b9257731a/" target="_blank" className={styles.link}>
           <img
             src={getImageUrl("contact/linkedinIcon.png")}
             alt="LinkedIn icon"
           />
           
         </a>
-        <a  href="https://www.github.com/myname" target="_blank" className={styles.link}>
+        <a  href="https://github.com/Rudrakshi2006/" target="_blank" className={styles.link}>
           <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
         
         </a>

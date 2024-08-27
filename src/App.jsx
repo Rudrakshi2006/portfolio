@@ -5,10 +5,11 @@ import { Experience } from "./components/Experience/Experience";
 import { Internship } from "./components/Internship/Internship"
 import { Research } from "./components/Research/Research"
 import {Skills} from './components/Skills/Skills'
-
 import { Hero } from "./components/Hero/Hero";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
+import { Essay } from "./components/Essay/Essay";
+
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Internship/>
       <Research/>
       <Projects />
+      <Essay/>
       <Contact />
     </div>
   );

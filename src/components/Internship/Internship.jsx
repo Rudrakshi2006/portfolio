@@ -4,30 +4,21 @@ import { getImageUrl } from "../../utils";
 
 const data = [
     {
-        "title": "Internship A",
+        "title": "Internship",
         company: "Tata Consultancy",
-        "imageSrc": "projects/project.png",
-        "description": "This is a project made to learn the latest languages by building an app.",
-        responsibility: 'responsibility',
+        "imageSrc": "internship/tata.pdf",
+        "description": "Gain practical work experience, developed industry-relevant skills through real time projects.",
+        responsibility: 'Frontend Engineer',
         time: "Jun 24 - May 25",
 
     },
     {
-        "title": "Internship A",
-        company: "Company A",
-        "imageSrc": "projects/project.png",
-        "description": "This is a project made to learn the latest languages by building an app.",
-        responsibility: 'responsibility',
-        time: "time",
+        "title": "Summer Internship",
+        company: "Google STEP",
+        "description": "Learned technical skills, worked on software Engineering projects, and receive mentorship from Google engineers",
+        responsibility: 'Intern',
+        time: "May 24",
     },
-    {
-        "title": "Internship A",
-        company: "Company A",
-        "imageSrc": "projects/project.png",
-        "description": "This is a project made to learn the latest languages by building an app.",
-        responsibility: 'responsibility',
-        time: "time",
-    }
 ]
 
 export const Internship = () => {
@@ -41,9 +32,9 @@ export const Internship = () => {
                         <h5>{`${e.company} (${e.time})`}</h5>
                         <p>{e.description}</p>
                         <p>Responsibility: {e.responsibility}</p>
-                        <a href={getImageUrl(e.imageSrc)} className={styles.link} target="_blank">
+                      {e.imageSrc&&  <a href={getImageUrl(e.imageSrc)} className={styles.link} target="_blank">
                             View
-                        </a>
+                        </a>}
 
 
                     </div>
